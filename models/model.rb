@@ -44,7 +44,7 @@ class Playlist
         #   track_name = playlist.name
         #   track_user = playlist.artists
         #   track.album_img
-            @songs << Song.new(track.name,track.artists,track.album.images.first["url"])
+            @songs << Song.new(track.name,track.artists.first.name,track.album.images.first["url"])
         end
     end
     
